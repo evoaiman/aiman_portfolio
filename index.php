@@ -1,2 +1,1 @@
-hey bro
-<?php echo 'hey bro..'?>
+<?php echo 'hey bro..';?>
