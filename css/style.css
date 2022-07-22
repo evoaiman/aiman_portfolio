@@ -21,6 +21,7 @@
 
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400';
 @import 'https://fonts.googleapis.com/css?family=Lora:400,400italic';
+@import 'https://fonts.googleapis.com/css2?family=Righteous&display=swap';
 
 /*
 	2. Common Styles
@@ -33,7 +34,7 @@ body {
 
 .global-outer {
     width: 100%;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -61,7 +62,7 @@ h6 {
     font-weight: 300;
     line-height: 1.8;
     color: #0e0e0e;
-    font-family: 'Lora', serif;
+    font-family: 'Righteous', cursive;
 }
 
 h1 {
@@ -89,7 +90,7 @@ h6 {
 }
 
 p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.8;
     color: #6d6d6d;
 }
@@ -434,6 +435,11 @@ textarea:focus {
     overflow: hidden;
 }
 
+#sidebar .intro span {
+    color: #0e0e0e;
+    font-weight: bold;
+}
+
 #sidebar .sidebar-inner {
     padding-right: 30px;
 }
@@ -466,6 +472,8 @@ textarea:focus {
     transition: color 100ms;
     border: none;
     font-weight: 300;
+    font-family: 'Righteous', cursive;
+    font-size: 28px;
 }
 
 #sidebar nav ul li a.current,
@@ -603,7 +611,7 @@ textarea:focus {
 }
 
 #sidebar nav ul li.dropdown ul li a {
-    font-size: 13px;
+    font-size: 20px;
 }
 
 #sidebar nav ul li.dropdown ul li a:before {
@@ -906,6 +914,15 @@ textarea:focus {
 #main .main-outer {
     overflow: hidden;
     padding-left: 30px;
+}
+
+#main .title h2 {
+    font-weight: 600;
+    font-size: 64px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
@@ -2265,7 +2282,7 @@ textarea:focus {
         margin: 0 5px;
     }
     #sidebar nav ul li.dropdown {
-        poisiion: relative;
+        position: relative;
         margin-right: 17px;
     }
     #sidebar nav ul li.dropdown ul {
