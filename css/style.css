@@ -14,9 +14,11 @@
 	12. Responsive
 */
 
+
 /*
 	1. Google Fonts Import
 */
+
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400';
 @import 'https://fonts.googleapis.com/css?family=Lora:400,400italic';
 
@@ -38,7 +40,7 @@ body {
     position: relative;
     opacity: 0;
     -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .global-outer .global-inner {
@@ -46,7 +48,16 @@ body {
     overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.global-inner {
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 300;
     line-height: 1.8;
     color: #0e0e0e;
@@ -92,10 +103,12 @@ a {
     border-bottom: 1px solid rgba(72, 186, 134, 0);
     padding-bottom: 1px;
     -webkit-transition: color 200ms, border-color 200ms;
-            transition: color 200ms, border-color 200ms;
+    transition: color 200ms, border-color 200ms;
 }
 
-a:hover, a:active, a:focus {
+a:hover,
+a:active,
+a:focus {
     color: #32845e;
     text-decoration: none;
     border-color: rgba(72, 186, 134, 0.3);
@@ -120,7 +133,8 @@ blockquote {
     color: rgba(109, 109, 109, 0.7);
 }
 
-input, textarea {
+input,
+textarea {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -131,11 +145,12 @@ input, textarea {
     border-radius: 2px;
     border-bottom: 1px solid transparent;
     -webkit-transition: background-color 200ms, border-color 300ms, border-radius 100ms;
-            transition: background-color 200ms, border-color 300ms, border-radius 100ms;
+    transition: background-color 200ms, border-color 300ms, border-radius 100ms;
     box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     background-color: #fff;
     border-radius: 0;
     border-color: rgba(0, 0, 0, 0.08);
@@ -151,7 +166,7 @@ input:focus, textarea:focus {
     border-radius: 2px;
     padding: 8px 14px;
     -webkit-transition: background-color 200ms;
-            transition: background-color 200ms;
+    transition: background-color 200ms;
 }
 
 .btn:hover {
@@ -200,7 +215,7 @@ input:focus, textarea:focus {
     height: 55px;
     box-shadow: inset 0 -50px 50px -50px rgba(0, 0, 0, 0.5);
     -webkit-transition: bottom 300ms;
-            transition: bottom 300ms;
+    transition: bottom 300ms;
 }
 
 .carousel .carousel-indicators {
@@ -217,113 +232,113 @@ input:focus, textarea:focus {
     border: 1px solid #fff;
     overflow: hidden;
     -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    transform: translateY(100%);
     opacity: 0;
 }
 
 .carousel .carousel-indicators li:nth-child(1) {
     -webkit-transition: opacity 200ms 100ms, -webkit-transform 200ms 100ms;
-            transition: opacity 200ms 100ms, -webkit-transform 200ms 100ms;
-            transition: transform 200ms 100ms, opacity 200ms 100ms;
-            transition: transform 200ms 100ms, opacity 200ms 100ms, -webkit-transform 200ms 100ms;
+    transition: opacity 200ms 100ms, -webkit-transform 200ms 100ms;
+    transition: transform 200ms 100ms, opacity 200ms 100ms;
+    transition: transform 200ms 100ms, opacity 200ms 100ms, -webkit-transform 200ms 100ms;
 }
 
 .carousel .carousel-indicators li:nth-child(2) {
     -webkit-transition: opacity 200ms 200ms, -webkit-transform 200ms 200ms;
-            transition: opacity 200ms 200ms, -webkit-transform 200ms 200ms;
-            transition: transform 200ms 200ms, opacity 200ms 200ms;
-            transition: transform 200ms 200ms, opacity 200ms 200ms, -webkit-transform 200ms 200ms;
+    transition: opacity 200ms 200ms, -webkit-transform 200ms 200ms;
+    transition: transform 200ms 200ms, opacity 200ms 200ms;
+    transition: transform 200ms 200ms, opacity 200ms 200ms, -webkit-transform 200ms 200ms;
 }
 
 .carousel .carousel-indicators li:nth-child(3) {
     -webkit-transition: opacity 200ms 300ms, -webkit-transform 200ms 300ms;
-            transition: opacity 200ms 300ms, -webkit-transform 200ms 300ms;
-            transition: transform 200ms 300ms, opacity 200ms 300ms;
-            transition: transform 200ms 300ms, opacity 200ms 300ms, -webkit-transform 200ms 300ms;
+    transition: opacity 200ms 300ms, -webkit-transform 200ms 300ms;
+    transition: transform 200ms 300ms, opacity 200ms 300ms;
+    transition: transform 200ms 300ms, opacity 200ms 300ms, -webkit-transform 200ms 300ms;
 }
 
 .carousel .carousel-indicators li:nth-child(4) {
     -webkit-transition: opacity 200ms 400ms, -webkit-transform 200ms 400ms;
-            transition: opacity 200ms 400ms, -webkit-transform 200ms 400ms;
-            transition: transform 200ms 400ms, opacity 200ms 400ms;
-            transition: transform 200ms 400ms, opacity 200ms 400ms, -webkit-transform 200ms 400ms;
+    transition: opacity 200ms 400ms, -webkit-transform 200ms 400ms;
+    transition: transform 200ms 400ms, opacity 200ms 400ms;
+    transition: transform 200ms 400ms, opacity 200ms 400ms, -webkit-transform 200ms 400ms;
 }
 
 .carousel .carousel-indicators li:nth-child(5) {
     -webkit-transition: opacity 200ms 500ms, -webkit-transform 200ms 500ms;
-            transition: opacity 200ms 500ms, -webkit-transform 200ms 500ms;
-            transition: transform 200ms 500ms, opacity 200ms 500ms;
-            transition: transform 200ms 500ms, opacity 200ms 500ms, -webkit-transform 200ms 500ms;
+    transition: opacity 200ms 500ms, -webkit-transform 200ms 500ms;
+    transition: transform 200ms 500ms, opacity 200ms 500ms;
+    transition: transform 200ms 500ms, opacity 200ms 500ms, -webkit-transform 200ms 500ms;
 }
 
 .carousel .carousel-indicators li:nth-child(6) {
     -webkit-transition: opacity 200ms 600ms, -webkit-transform 200ms 600ms;
-            transition: opacity 200ms 600ms, -webkit-transform 200ms 600ms;
-            transition: transform 200ms 600ms, opacity 200ms 600ms;
-            transition: transform 200ms 600ms, opacity 200ms 600ms, -webkit-transform 200ms 600ms;
+    transition: opacity 200ms 600ms, -webkit-transform 200ms 600ms;
+    transition: transform 200ms 600ms, opacity 200ms 600ms;
+    transition: transform 200ms 600ms, opacity 200ms 600ms, -webkit-transform 200ms 600ms;
 }
 
 .carousel .carousel-indicators li:nth-child(7) {
     -webkit-transition: opacity 200ms 700ms, -webkit-transform 200ms 700ms;
-            transition: opacity 200ms 700ms, -webkit-transform 200ms 700ms;
-            transition: transform 200ms 700ms, opacity 200ms 700ms;
-            transition: transform 200ms 700ms, opacity 200ms 700ms, -webkit-transform 200ms 700ms;
+    transition: opacity 200ms 700ms, -webkit-transform 200ms 700ms;
+    transition: transform 200ms 700ms, opacity 200ms 700ms;
+    transition: transform 200ms 700ms, opacity 200ms 700ms, -webkit-transform 200ms 700ms;
 }
 
 .carousel .carousel-indicators li:nth-child(8) {
     -webkit-transition: opacity 200ms 800ms, -webkit-transform 200ms 800ms;
-            transition: opacity 200ms 800ms, -webkit-transform 200ms 800ms;
-            transition: transform 200ms 800ms, opacity 200ms 800ms;
-            transition: transform 200ms 800ms, opacity 200ms 800ms, -webkit-transform 200ms 800ms;
+    transition: opacity 200ms 800ms, -webkit-transform 200ms 800ms;
+    transition: transform 200ms 800ms, opacity 200ms 800ms;
+    transition: transform 200ms 800ms, opacity 200ms 800ms, -webkit-transform 200ms 800ms;
 }
 
 .carousel .carousel-indicators li:nth-child(9) {
     -webkit-transition: opacity 200ms 900ms, -webkit-transform 200ms 900ms;
-            transition: opacity 200ms 900ms, -webkit-transform 200ms 900ms;
-            transition: transform 200ms 900ms, opacity 200ms 900ms;
-            transition: transform 200ms 900ms, opacity 200ms 900ms, -webkit-transform 200ms 900ms;
+    transition: opacity 200ms 900ms, -webkit-transform 200ms 900ms;
+    transition: transform 200ms 900ms, opacity 200ms 900ms;
+    transition: transform 200ms 900ms, opacity 200ms 900ms, -webkit-transform 200ms 900ms;
 }
 
 .carousel .carousel-indicators li:nth-child(10) {
     -webkit-transition: opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
-            transition: opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
-            transition: transform 200ms 1000ms, opacity 200ms 1000ms;
-            transition: transform 200ms 1000ms, opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
+    transition: opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
+    transition: transform 200ms 1000ms, opacity 200ms 1000ms;
+    transition: transform 200ms 1000ms, opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
 }
 
 .carousel .carousel-indicators li:nth-child(11) {
     -webkit-transition: opacity 200ms 1100ms, -webkit-transform 200ms 1100ms;
-            transition: opacity 200ms 1100ms, -webkit-transform 200ms 1100ms;
-            transition: transform 200ms 1100ms, opacity 200ms 1100ms;
-            transition: transform 200ms 1100ms, opacity 200ms 1100ms, -webkit-transform 200ms 1100ms;
+    transition: opacity 200ms 1100ms, -webkit-transform 200ms 1100ms;
+    transition: transform 200ms 1100ms, opacity 200ms 1100ms;
+    transition: transform 200ms 1100ms, opacity 200ms 1100ms, -webkit-transform 200ms 1100ms;
 }
 
 .carousel .carousel-indicators li:nth-child(12) {
     -webkit-transition: opacity 200ms 1200ms, -webkit-transform 200ms 1200ms;
-            transition: opacity 200ms 1200ms, -webkit-transform 200ms 1200ms;
-            transition: transform 200ms 1200ms, opacity 200ms 1200ms;
-            transition: transform 200ms 1200ms, opacity 200ms 1200ms, -webkit-transform 200ms 1200ms;
+    transition: opacity 200ms 1200ms, -webkit-transform 200ms 1200ms;
+    transition: transform 200ms 1200ms, opacity 200ms 1200ms;
+    transition: transform 200ms 1200ms, opacity 200ms 1200ms, -webkit-transform 200ms 1200ms;
 }
 
 .carousel .carousel-indicators li:nth-child(13) {
     -webkit-transition: opacity 200ms 1300ms, -webkit-transform 200ms 1300ms;
-            transition: opacity 200ms 1300ms, -webkit-transform 200ms 1300ms;
-            transition: transform 200ms 1300ms, opacity 200ms 1300ms;
-            transition: transform 200ms 1300ms, opacity 200ms 1300ms, -webkit-transform 200ms 1300ms;
+    transition: opacity 200ms 1300ms, -webkit-transform 200ms 1300ms;
+    transition: transform 200ms 1300ms, opacity 200ms 1300ms;
+    transition: transform 200ms 1300ms, opacity 200ms 1300ms, -webkit-transform 200ms 1300ms;
 }
 
 .carousel .carousel-indicators li:nth-child(14) {
     -webkit-transition: opacity 200ms 1400ms, -webkit-transform 200ms 1400ms;
-            transition: opacity 200ms 1400ms, -webkit-transform 200ms 1400ms;
-            transition: transform 200ms 1400ms, opacity 200ms 1400ms;
-            transition: transform 200ms 1400ms, opacity 200ms 1400ms, -webkit-transform 200ms 1400ms;
+    transition: opacity 200ms 1400ms, -webkit-transform 200ms 1400ms;
+    transition: transform 200ms 1400ms, opacity 200ms 1400ms;
+    transition: transform 200ms 1400ms, opacity 200ms 1400ms, -webkit-transform 200ms 1400ms;
 }
 
 .carousel .carousel-indicators li:nth-child(15) {
     -webkit-transition: opacity 200ms 1500ms, -webkit-transform 200ms 1500ms;
-            transition: opacity 200ms 1500ms, -webkit-transform 200ms 1500ms;
-            transition: transform 200ms 1500ms, opacity 200ms 1500ms;
-            transition: transform 200ms 1500ms, opacity 200ms 1500ms, -webkit-transform 200ms 1500ms;
+    transition: opacity 200ms 1500ms, -webkit-transform 200ms 1500ms;
+    transition: transform 200ms 1500ms, opacity 200ms 1500ms;
+    transition: transform 200ms 1500ms, opacity 200ms 1500ms, -webkit-transform 200ms 1500ms;
 }
 
 .carousel .carousel-indicators li:before {
@@ -335,7 +350,7 @@ input:focus, textarea:focus {
     height: 100%;
     background-color: #fff;
     -webkit-transition: width 300ms;
-            transition: width 300ms;
+    transition: width 300ms;
 }
 
 .carousel .carousel-indicators li.active {
@@ -358,7 +373,7 @@ input:focus, textarea:focus {
 
 .carousel:hover .carousel-indicators li {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
 }
 
@@ -366,12 +381,13 @@ input:focus, textarea:focus {
     color: #98c3d1;
 }
 
-.mfp-with-zoom.mfp-container, .mfp-with-zoom.mfp-bg {
+.mfp-with-zoom.mfp-container,
+.mfp-with-zoom.mfp-bg {
     opacity: 0;
     -webkit-transition: all 300ms ease-out;
-            transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
     -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .mfp-with-zoom.mfp-ready .mfp-container {
@@ -407,6 +423,7 @@ input:focus, textarea:focus {
     width: 100%;
 }
 
+
 /*
 	3. Sidebar
 */
@@ -439,27 +456,31 @@ input:focus, textarea:focus {
     padding: 0;
 }
 
-#sidebar nav ul li a, #sidebar nav ul li span {
+#sidebar nav ul li a,
+#sidebar nav ul li span {
     display: inline-block;
     padding: 6px 0;
     color: #0e0e0e;
     text-decoration: none;
     -webkit-transition: color 100ms;
-            transition: color 100ms;
+    transition: color 100ms;
     border: none;
     font-weight: 300;
 }
 
-#sidebar nav ul li a.current, #sidebar nav ul li span.current {
+#sidebar nav ul li a.current,
+#sidebar nav ul li span.current {
     color: #48ba86;
 }
 
-#sidebar nav ul li a:hover, #sidebar nav ul li span:hover {
+#sidebar nav ul li a:hover,
+#sidebar nav ul li span:hover {
     color: #48ba86;
     cursor: pointer;
 }
 
-#sidebar nav ul li a:hover:before, #sidebar nav ul li span:hover:before {
+#sidebar nav ul li a:hover:before,
+#sidebar nav ul li span:hover:before {
     background-color: #48ba86;
 }
 
@@ -467,7 +488,8 @@ input:focus, textarea:focus {
     position: relative;
 }
 
-#sidebar nav ul li.dropdown span:after, #sidebar nav ul li.dropdown span:before {
+#sidebar nav ul li.dropdown span:after,
+#sidebar nav ul li.dropdown span:before {
     content: '';
     position: absolute;
     top: 2px;
@@ -479,9 +501,9 @@ input:focus, textarea:focus {
     height: 1px;
     background-color: #0e0e0e;
     -webkit-transition: background-color 100ms, -webkit-transform 200ms;
-            transition: background-color 100ms, -webkit-transform 200ms;
-            transition: transform 200ms, background-color 100ms;
-            transition: transform 200ms, background-color 100ms, -webkit-transform 200ms;
+    transition: background-color 100ms, -webkit-transform 200ms;
+    transition: transform 200ms, background-color 100ms;
+    transition: transform 200ms, background-color 100ms, -webkit-transform 200ms;
 }
 
 #sidebar nav ul li.dropdown span:before {
@@ -506,78 +528,78 @@ input:focus, textarea:focus {
 
 #sidebar nav ul li.dropdown ul li {
     -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
     opacity: 0;
 }
 
 #sidebar nav ul li.dropdown ul li:nth-child(1) {
     -webkit-transition: opacity 200ms 100ms, -webkit-transform 400ms 100ms;
-            transition: opacity 200ms 100ms, -webkit-transform 400ms 100ms;
-            transition: transform 400ms 100ms, opacity 200ms 100ms;
-            transition: transform 400ms 100ms, opacity 200ms 100ms, -webkit-transform 400ms 100ms;
+    transition: opacity 200ms 100ms, -webkit-transform 400ms 100ms;
+    transition: transform 400ms 100ms, opacity 200ms 100ms;
+    transition: transform 400ms 100ms, opacity 200ms 100ms, -webkit-transform 400ms 100ms;
 }
 
 #sidebar nav ul li.dropdown ul li:nth-child(2) {
     -webkit-transition: opacity 200ms 200ms, -webkit-transform 400ms 200ms;
-            transition: opacity 200ms 200ms, -webkit-transform 400ms 200ms;
-            transition: transform 400ms 200ms, opacity 200ms 200ms;
-            transition: transform 400ms 200ms, opacity 200ms 200ms, -webkit-transform 400ms 200ms;
+    transition: opacity 200ms 200ms, -webkit-transform 400ms 200ms;
+    transition: transform 400ms 200ms, opacity 200ms 200ms;
+    transition: transform 400ms 200ms, opacity 200ms 200ms, -webkit-transform 400ms 200ms;
 }
 
 #sidebar nav ul li.dropdown ul li:nth-child(3) {
     -webkit-transition: opacity 200ms 300ms, -webkit-transform 400ms 300ms;
-            transition: opacity 200ms 300ms, -webkit-transform 400ms 300ms;
-            transition: transform 400ms 300ms, opacity 200ms 300ms;
-            transition: transform 400ms 300ms, opacity 200ms 300ms, -webkit-transform 400ms 300ms;
+    transition: opacity 200ms 300ms, -webkit-transform 400ms 300ms;
+    transition: transform 400ms 300ms, opacity 200ms 300ms;
+    transition: transform 400ms 300ms, opacity 200ms 300ms, -webkit-transform 400ms 300ms;
 }
 
 #sidebar nav ul li.dropdown ul li:nth-child(4) {
     -webkit-transition: opacity 200ms 400ms, -webkit-transform 400ms 400ms;
-            transition: opacity 200ms 400ms, -webkit-transform 400ms 400ms;
-            transition: transform 400ms 400ms, opacity 200ms 400ms;
-            transition: transform 400ms 400ms, opacity 200ms 400ms, -webkit-transform 400ms 400ms;
+    transition: opacity 200ms 400ms, -webkit-transform 400ms 400ms;
+    transition: transform 400ms 400ms, opacity 200ms 400ms;
+    transition: transform 400ms 400ms, opacity 200ms 400ms, -webkit-transform 400ms 400ms;
 }
 
 #sidebar nav ul li.dropdown ul li:nth-child(5) {
     -webkit-transition: opacity 200ms 500ms, -webkit-transform 400ms 500ms;
-            transition: opacity 200ms 500ms, -webkit-transform 400ms 500ms;
-            transition: transform 400ms 500ms, opacity 200ms 500ms;
-            transition: transform 400ms 500ms, opacity 200ms 500ms, -webkit-transform 400ms 500ms;
+    transition: opacity 200ms 500ms, -webkit-transform 400ms 500ms;
+    transition: transform 400ms 500ms, opacity 200ms 500ms;
+    transition: transform 400ms 500ms, opacity 200ms 500ms, -webkit-transform 400ms 500ms;
 }
 
 #sidebar nav ul li.dropdown ul li:nth-child(6) {
     -webkit-transition: opacity 200ms 600ms, -webkit-transform 400ms 600ms;
-            transition: opacity 200ms 600ms, -webkit-transform 400ms 600ms;
-            transition: transform 400ms 600ms, opacity 200ms 600ms;
-            transition: transform 400ms 600ms, opacity 200ms 600ms, -webkit-transform 400ms 600ms;
+    transition: opacity 200ms 600ms, -webkit-transform 400ms 600ms;
+    transition: transform 400ms 600ms, opacity 200ms 600ms;
+    transition: transform 400ms 600ms, opacity 200ms 600ms, -webkit-transform 400ms 600ms;
 }
 
 #sidebar nav ul li.dropdown ul li:nth-child(7) {
     -webkit-transition: opacity 200ms 700ms, -webkit-transform 400ms 700ms;
-            transition: opacity 200ms 700ms, -webkit-transform 400ms 700ms;
-            transition: transform 400ms 700ms, opacity 200ms 700ms;
-            transition: transform 400ms 700ms, opacity 200ms 700ms, -webkit-transform 400ms 700ms;
+    transition: opacity 200ms 700ms, -webkit-transform 400ms 700ms;
+    transition: transform 400ms 700ms, opacity 200ms 700ms;
+    transition: transform 400ms 700ms, opacity 200ms 700ms, -webkit-transform 400ms 700ms;
 }
 
 #sidebar nav ul li.dropdown ul li:nth-child(8) {
     -webkit-transition: opacity 200ms 800ms, -webkit-transform 400ms 800ms;
-            transition: opacity 200ms 800ms, -webkit-transform 400ms 800ms;
-            transition: transform 400ms 800ms, opacity 200ms 800ms;
-            transition: transform 400ms 800ms, opacity 200ms 800ms, -webkit-transform 400ms 800ms;
+    transition: opacity 200ms 800ms, -webkit-transform 400ms 800ms;
+    transition: transform 400ms 800ms, opacity 200ms 800ms;
+    transition: transform 400ms 800ms, opacity 200ms 800ms, -webkit-transform 400ms 800ms;
 }
 
 #sidebar nav ul li.dropdown ul li:nth-child(9) {
     -webkit-transition: opacity 200ms 900ms, -webkit-transform 400ms 900ms;
-            transition: opacity 200ms 900ms, -webkit-transform 400ms 900ms;
-            transition: transform 400ms 900ms, opacity 200ms 900ms;
-            transition: transform 400ms 900ms, opacity 200ms 900ms, -webkit-transform 400ms 900ms;
+    transition: opacity 200ms 900ms, -webkit-transform 400ms 900ms;
+    transition: transform 400ms 900ms, opacity 200ms 900ms;
+    transition: transform 400ms 900ms, opacity 200ms 900ms, -webkit-transform 400ms 900ms;
 }
 
 #sidebar nav ul li.dropdown ul li:nth-child(10) {
     -webkit-transition: opacity 200ms 1000ms, -webkit-transform 400ms 1000ms;
-            transition: opacity 200ms 1000ms, -webkit-transform 400ms 1000ms;
-            transition: transform 400ms 1000ms, opacity 200ms 1000ms;
-            transition: transform 400ms 1000ms, opacity 200ms 1000ms, -webkit-transform 400ms 1000ms;
+    transition: opacity 200ms 1000ms, -webkit-transform 400ms 1000ms;
+    transition: transform 400ms 1000ms, opacity 200ms 1000ms;
+    transition: transform 400ms 1000ms, opacity 200ms 1000ms, -webkit-transform 400ms 1000ms;
 }
 
 #sidebar nav ul li.dropdown ul li a {
@@ -593,7 +615,7 @@ input:focus, textarea:focus {
     margin-bottom: 4px;
     margin-right: 6px;
     -webkit-transition: background-color 100ms;
-            transition: background-color 100ms;
+    transition: background-color 100ms;
 }
 
 #sidebar nav ul li.dropdown ul li a.current:before {
@@ -606,83 +628,83 @@ input:focus, textarea:focus {
 
 #sidebar nav ul li.dropdown.expanded span:before {
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 #sidebar nav ul li.dropdown.expanded ul li {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
 }
 
 #sidebar nav ul li.dropdown.expanded ul li:nth-child(1) {
     -webkit-transition: opacity 200ms 100ms, -webkit-transform 200ms 100ms;
-            transition: opacity 200ms 100ms, -webkit-transform 200ms 100ms;
-            transition: transform 200ms 100ms, opacity 200ms 100ms;
-            transition: transform 200ms 100ms, opacity 200ms 100ms, -webkit-transform 200ms 100ms;
+    transition: opacity 200ms 100ms, -webkit-transform 200ms 100ms;
+    transition: transform 200ms 100ms, opacity 200ms 100ms;
+    transition: transform 200ms 100ms, opacity 200ms 100ms, -webkit-transform 200ms 100ms;
 }
 
 #sidebar nav ul li.dropdown.expanded ul li:nth-child(2) {
     -webkit-transition: opacity 200ms 200ms, -webkit-transform 200ms 200ms;
-            transition: opacity 200ms 200ms, -webkit-transform 200ms 200ms;
-            transition: transform 200ms 200ms, opacity 200ms 200ms;
-            transition: transform 200ms 200ms, opacity 200ms 200ms, -webkit-transform 200ms 200ms;
+    transition: opacity 200ms 200ms, -webkit-transform 200ms 200ms;
+    transition: transform 200ms 200ms, opacity 200ms 200ms;
+    transition: transform 200ms 200ms, opacity 200ms 200ms, -webkit-transform 200ms 200ms;
 }
 
 #sidebar nav ul li.dropdown.expanded ul li:nth-child(3) {
     -webkit-transition: opacity 200ms 300ms, -webkit-transform 200ms 300ms;
-            transition: opacity 200ms 300ms, -webkit-transform 200ms 300ms;
-            transition: transform 200ms 300ms, opacity 200ms 300ms;
-            transition: transform 200ms 300ms, opacity 200ms 300ms, -webkit-transform 200ms 300ms;
+    transition: opacity 200ms 300ms, -webkit-transform 200ms 300ms;
+    transition: transform 200ms 300ms, opacity 200ms 300ms;
+    transition: transform 200ms 300ms, opacity 200ms 300ms, -webkit-transform 200ms 300ms;
 }
 
 #sidebar nav ul li.dropdown.expanded ul li:nth-child(4) {
     -webkit-transition: opacity 200ms 400ms, -webkit-transform 200ms 400ms;
-            transition: opacity 200ms 400ms, -webkit-transform 200ms 400ms;
-            transition: transform 200ms 400ms, opacity 200ms 400ms;
-            transition: transform 200ms 400ms, opacity 200ms 400ms, -webkit-transform 200ms 400ms;
+    transition: opacity 200ms 400ms, -webkit-transform 200ms 400ms;
+    transition: transform 200ms 400ms, opacity 200ms 400ms;
+    transition: transform 200ms 400ms, opacity 200ms 400ms, -webkit-transform 200ms 400ms;
 }
 
 #sidebar nav ul li.dropdown.expanded ul li:nth-child(5) {
     -webkit-transition: opacity 200ms 500ms, -webkit-transform 200ms 500ms;
-            transition: opacity 200ms 500ms, -webkit-transform 200ms 500ms;
-            transition: transform 200ms 500ms, opacity 200ms 500ms;
-            transition: transform 200ms 500ms, opacity 200ms 500ms, -webkit-transform 200ms 500ms;
+    transition: opacity 200ms 500ms, -webkit-transform 200ms 500ms;
+    transition: transform 200ms 500ms, opacity 200ms 500ms;
+    transition: transform 200ms 500ms, opacity 200ms 500ms, -webkit-transform 200ms 500ms;
 }
 
 #sidebar nav ul li.dropdown.expanded ul li:nth-child(6) {
     -webkit-transition: opacity 200ms 600ms, -webkit-transform 200ms 600ms;
-            transition: opacity 200ms 600ms, -webkit-transform 200ms 600ms;
-            transition: transform 200ms 600ms, opacity 200ms 600ms;
-            transition: transform 200ms 600ms, opacity 200ms 600ms, -webkit-transform 200ms 600ms;
+    transition: opacity 200ms 600ms, -webkit-transform 200ms 600ms;
+    transition: transform 200ms 600ms, opacity 200ms 600ms;
+    transition: transform 200ms 600ms, opacity 200ms 600ms, -webkit-transform 200ms 600ms;
 }
 
 #sidebar nav ul li.dropdown.expanded ul li:nth-child(7) {
     -webkit-transition: opacity 200ms 700ms, -webkit-transform 200ms 700ms;
-            transition: opacity 200ms 700ms, -webkit-transform 200ms 700ms;
-            transition: transform 200ms 700ms, opacity 200ms 700ms;
-            transition: transform 200ms 700ms, opacity 200ms 700ms, -webkit-transform 200ms 700ms;
+    transition: opacity 200ms 700ms, -webkit-transform 200ms 700ms;
+    transition: transform 200ms 700ms, opacity 200ms 700ms;
+    transition: transform 200ms 700ms, opacity 200ms 700ms, -webkit-transform 200ms 700ms;
 }
 
 #sidebar nav ul li.dropdown.expanded ul li:nth-child(8) {
     -webkit-transition: opacity 200ms 800ms, -webkit-transform 200ms 800ms;
-            transition: opacity 200ms 800ms, -webkit-transform 200ms 800ms;
-            transition: transform 200ms 800ms, opacity 200ms 800ms;
-            transition: transform 200ms 800ms, opacity 200ms 800ms, -webkit-transform 200ms 800ms;
+    transition: opacity 200ms 800ms, -webkit-transform 200ms 800ms;
+    transition: transform 200ms 800ms, opacity 200ms 800ms;
+    transition: transform 200ms 800ms, opacity 200ms 800ms, -webkit-transform 200ms 800ms;
 }
 
 #sidebar nav ul li.dropdown.expanded ul li:nth-child(9) {
     -webkit-transition: opacity 200ms 900ms, -webkit-transform 200ms 900ms;
-            transition: opacity 200ms 900ms, -webkit-transform 200ms 900ms;
-            transition: transform 200ms 900ms, opacity 200ms 900ms;
-            transition: transform 200ms 900ms, opacity 200ms 900ms, -webkit-transform 200ms 900ms;
+    transition: opacity 200ms 900ms, -webkit-transform 200ms 900ms;
+    transition: transform 200ms 900ms, opacity 200ms 900ms;
+    transition: transform 200ms 900ms, opacity 200ms 900ms, -webkit-transform 200ms 900ms;
 }
 
 #sidebar nav ul li.dropdown.expanded ul li:nth-child(10) {
     -webkit-transition: opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
-            transition: opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
-            transition: transform 200ms 1000ms, opacity 200ms 1000ms;
-            transition: transform 200ms 1000ms, opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
+    transition: opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
+    transition: transform 200ms 1000ms, opacity 200ms 1000ms;
+    transition: transform 200ms 1000ms, opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
 }
 
 #sidebar .basket-open {
@@ -701,7 +723,7 @@ input:focus, textarea:focus {
     font-size: 16px;
     color: #bfbfbf;
     -webkit-transition: color 200ms;
-            transition: color 200ms;
+    transition: color 200ms;
 }
 
 #sidebar .basket-open .cart-indicator span {
@@ -775,7 +797,7 @@ input:focus, textarea:focus {
 #sidebar .widgets-block .widget.filter li {
     color: #0e0e0e;
     -webkit-transition: color 100ms;
-            transition: color 100ms;
+    transition: color 100ms;
 }
 
 #sidebar .widgets-block .widget.filter li.active {
@@ -857,7 +879,7 @@ input:focus, textarea:focus {
     border-radius: 150px;
     white-space: nowrap;
     -webkit-transition: background-color 200ms, color 200ms;
-            transition: background-color 200ms, color 200ms;
+    transition: background-color 200ms, color 200ms;
 }
 
 #sidebar .widgets-block .widget.tags ul li a:hover {
@@ -865,20 +887,27 @@ input:focus, textarea:focus {
     background-color: rgba(191, 191, 191, 0.2);
 }
 
+
 /*
 	4. Main
 */
 
 #main {
     float: left;
-    overflow: hidden;
+    overflow: scroll;
     width: 75%;
+    height: 100%;
+}
+
+#main::-webkit-scrollbar {
+    display: none;
 }
 
 #main .main-outer {
     overflow: hidden;
     padding-left: 30px;
 }
+
 
 /*
 	5. Works Grid
@@ -913,7 +942,7 @@ input:focus, textarea:focus {
     top: 50%;
     left: 0;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     z-index: 2;
 }
 
@@ -921,12 +950,12 @@ input:focus, textarea:focus {
     padding: 20px;
     text-align: center;
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     opacity: 0;
     -webkit-transition: opacity 100ms, -webkit-transform 250ms;
-            transition: opacity 100ms, -webkit-transform 250ms;
-            transition: transform 250ms, opacity 100ms;
-            transition: transform 250ms, opacity 100ms, -webkit-transform 250ms;
+    transition: opacity 100ms, -webkit-transform 250ms;
+    transition: transform 250ms, opacity 100ms;
+    transition: transform 250ms, opacity 100ms, -webkit-transform 250ms;
 }
 
 #works-grid .works-item .picture .content .text h2 {
@@ -973,7 +1002,7 @@ input:focus, textarea:focus {
     top: 0;
     left: 0;
     -webkit-transition: opacity 250ms;
-            transition: opacity 250ms;
+    transition: opacity 250ms;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
@@ -981,7 +1010,7 @@ input:focus, textarea:focus {
 
 #works-grid .works-item:hover .picture .content .text {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     opacity: 1;
 }
 
@@ -997,6 +1026,7 @@ input:focus, textarea:focus {
     width: 23.2375%;
 }
 
+
 /*
 	6. Index Page
 */
@@ -1005,6 +1035,7 @@ input:focus, textarea:focus {
     margin-top: 30px;
     text-align: center;
 }
+
 
 /*
 	7. Project Page
@@ -1129,12 +1160,12 @@ input:focus, textarea:focus {
     font-size: 13px;
     padding: 4px 12px;
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     opacity: 0;
     -webkit-transition: opacity 100ms, -webkit-transform 250ms;
-            transition: opacity 100ms, -webkit-transform 250ms;
-            transition: transform 250ms, opacity 100ms;
-            transition: transform 250ms, opacity 100ms, -webkit-transform 250ms;
+    transition: opacity 100ms, -webkit-transform 250ms;
+    transition: transform 250ms, opacity 100ms;
+    transition: transform 250ms, opacity 100ms, -webkit-transform 250ms;
 }
 
 #project-page #main .project-image img {
@@ -1143,7 +1174,7 @@ input:focus, textarea:focus {
 
 #project-page #main .project-image:hover .caption {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     opacity: 1;
 }
 
@@ -1174,9 +1205,9 @@ input:focus, textarea:focus {
     height: 1px;
     background-color: #bfbfbf;
     -webkit-transition: background-color 300ms, -webkit-transform 300ms;
-            transition: background-color 300ms, -webkit-transform 300ms;
-            transition: transform 300ms, background-color 300ms;
-            transition: transform 300ms, background-color 300ms, -webkit-transform 300ms;
+    transition: background-color 300ms, -webkit-transform 300ms;
+    transition: transform 300ms, background-color 300ms;
+    transition: transform 300ms, background-color 300ms, -webkit-transform 300ms;
 }
 
 #project-page #main .end-page .projects-navigation .arrow:after {
@@ -1189,7 +1220,7 @@ input:focus, textarea:focus {
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     -webkit-transition: border-color 300ms;
-            transition: border-color 300ms;
+    transition: border-color 300ms;
 }
 
 #project-page #main .end-page .projects-navigation .arrow.arrow-left:after {
@@ -1216,7 +1247,7 @@ input:focus, textarea:focus {
 
 #project-page #main .end-page .projects-navigation:hover .arrow.arrow-left {
     -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    transform: translateX(-20px);
 }
 
 #project-page #main .end-page .projects-navigation:hover .arrow.arrow-left:after {
@@ -1225,7 +1256,7 @@ input:focus, textarea:focus {
 
 #project-page #main .end-page .projects-navigation:hover .arrow.arrow-right {
     -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    transform: translateX(20px);
 }
 
 #project-page #main .end-page .projects-navigation:hover .arrow.arrow-right:after {
@@ -1262,6 +1293,7 @@ input:focus, textarea:focus {
 #project-page.alternate .end-page {
     margin-top: 100px;
 }
+
 
 /*
 	8. About Page
@@ -1337,77 +1369,77 @@ input:focus, textarea:focus {
     display: inline-block;
     opacity: 0;
     -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    transform: translateY(10px);
 }
 
 #about-page #main .team .team-member .content .social-links li:nth-child(1) {
     -webkit-transition: opacity 200ms 100ms, -webkit-transform 200ms 100ms;
-            transition: opacity 200ms 100ms, -webkit-transform 200ms 100ms;
-            transition: transform 200ms 100ms, opacity 200ms 100ms;
-            transition: transform 200ms 100ms, opacity 200ms 100ms, -webkit-transform 200ms 100ms;
+    transition: opacity 200ms 100ms, -webkit-transform 200ms 100ms;
+    transition: transform 200ms 100ms, opacity 200ms 100ms;
+    transition: transform 200ms 100ms, opacity 200ms 100ms, -webkit-transform 200ms 100ms;
 }
 
 #about-page #main .team .team-member .content .social-links li:nth-child(2) {
     -webkit-transition: opacity 200ms 200ms, -webkit-transform 200ms 200ms;
-            transition: opacity 200ms 200ms, -webkit-transform 200ms 200ms;
-            transition: transform 200ms 200ms, opacity 200ms 200ms;
-            transition: transform 200ms 200ms, opacity 200ms 200ms, -webkit-transform 200ms 200ms;
+    transition: opacity 200ms 200ms, -webkit-transform 200ms 200ms;
+    transition: transform 200ms 200ms, opacity 200ms 200ms;
+    transition: transform 200ms 200ms, opacity 200ms 200ms, -webkit-transform 200ms 200ms;
 }
 
 #about-page #main .team .team-member .content .social-links li:nth-child(3) {
     -webkit-transition: opacity 200ms 300ms, -webkit-transform 200ms 300ms;
-            transition: opacity 200ms 300ms, -webkit-transform 200ms 300ms;
-            transition: transform 200ms 300ms, opacity 200ms 300ms;
-            transition: transform 200ms 300ms, opacity 200ms 300ms, -webkit-transform 200ms 300ms;
+    transition: opacity 200ms 300ms, -webkit-transform 200ms 300ms;
+    transition: transform 200ms 300ms, opacity 200ms 300ms;
+    transition: transform 200ms 300ms, opacity 200ms 300ms, -webkit-transform 200ms 300ms;
 }
 
 #about-page #main .team .team-member .content .social-links li:nth-child(4) {
     -webkit-transition: opacity 200ms 400ms, -webkit-transform 200ms 400ms;
-            transition: opacity 200ms 400ms, -webkit-transform 200ms 400ms;
-            transition: transform 200ms 400ms, opacity 200ms 400ms;
-            transition: transform 200ms 400ms, opacity 200ms 400ms, -webkit-transform 200ms 400ms;
+    transition: opacity 200ms 400ms, -webkit-transform 200ms 400ms;
+    transition: transform 200ms 400ms, opacity 200ms 400ms;
+    transition: transform 200ms 400ms, opacity 200ms 400ms, -webkit-transform 200ms 400ms;
 }
 
 #about-page #main .team .team-member .content .social-links li:nth-child(5) {
     -webkit-transition: opacity 200ms 500ms, -webkit-transform 200ms 500ms;
-            transition: opacity 200ms 500ms, -webkit-transform 200ms 500ms;
-            transition: transform 200ms 500ms, opacity 200ms 500ms;
-            transition: transform 200ms 500ms, opacity 200ms 500ms, -webkit-transform 200ms 500ms;
+    transition: opacity 200ms 500ms, -webkit-transform 200ms 500ms;
+    transition: transform 200ms 500ms, opacity 200ms 500ms;
+    transition: transform 200ms 500ms, opacity 200ms 500ms, -webkit-transform 200ms 500ms;
 }
 
 #about-page #main .team .team-member .content .social-links li:nth-child(6) {
     -webkit-transition: opacity 200ms 600ms, -webkit-transform 200ms 600ms;
-            transition: opacity 200ms 600ms, -webkit-transform 200ms 600ms;
-            transition: transform 200ms 600ms, opacity 200ms 600ms;
-            transition: transform 200ms 600ms, opacity 200ms 600ms, -webkit-transform 200ms 600ms;
+    transition: opacity 200ms 600ms, -webkit-transform 200ms 600ms;
+    transition: transform 200ms 600ms, opacity 200ms 600ms;
+    transition: transform 200ms 600ms, opacity 200ms 600ms, -webkit-transform 200ms 600ms;
 }
 
 #about-page #main .team .team-member .content .social-links li:nth-child(7) {
     -webkit-transition: opacity 200ms 700ms, -webkit-transform 200ms 700ms;
-            transition: opacity 200ms 700ms, -webkit-transform 200ms 700ms;
-            transition: transform 200ms 700ms, opacity 200ms 700ms;
-            transition: transform 200ms 700ms, opacity 200ms 700ms, -webkit-transform 200ms 700ms;
+    transition: opacity 200ms 700ms, -webkit-transform 200ms 700ms;
+    transition: transform 200ms 700ms, opacity 200ms 700ms;
+    transition: transform 200ms 700ms, opacity 200ms 700ms, -webkit-transform 200ms 700ms;
 }
 
 #about-page #main .team .team-member .content .social-links li:nth-child(8) {
     -webkit-transition: opacity 200ms 800ms, -webkit-transform 200ms 800ms;
-            transition: opacity 200ms 800ms, -webkit-transform 200ms 800ms;
-            transition: transform 200ms 800ms, opacity 200ms 800ms;
-            transition: transform 200ms 800ms, opacity 200ms 800ms, -webkit-transform 200ms 800ms;
+    transition: opacity 200ms 800ms, -webkit-transform 200ms 800ms;
+    transition: transform 200ms 800ms, opacity 200ms 800ms;
+    transition: transform 200ms 800ms, opacity 200ms 800ms, -webkit-transform 200ms 800ms;
 }
 
 #about-page #main .team .team-member .content .social-links li:nth-child(9) {
     -webkit-transition: opacity 200ms 900ms, -webkit-transform 200ms 900ms;
-            transition: opacity 200ms 900ms, -webkit-transform 200ms 900ms;
-            transition: transform 200ms 900ms, opacity 200ms 900ms;
-            transition: transform 200ms 900ms, opacity 200ms 900ms, -webkit-transform 200ms 900ms;
+    transition: opacity 200ms 900ms, -webkit-transform 200ms 900ms;
+    transition: transform 200ms 900ms, opacity 200ms 900ms;
+    transition: transform 200ms 900ms, opacity 200ms 900ms, -webkit-transform 200ms 900ms;
 }
 
 #about-page #main .team .team-member .content .social-links li:nth-child(10) {
     -webkit-transition: opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
-            transition: opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
-            transition: transform 200ms 1000ms, opacity 200ms 1000ms;
-            transition: transform 200ms 1000ms, opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
+    transition: opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
+    transition: transform 200ms 1000ms, opacity 200ms 1000ms;
+    transition: transform 200ms 1000ms, opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
 }
 
 #about-page #main .team .team-member .content .social-links li a {
@@ -1427,7 +1459,7 @@ input:focus, textarea:focus {
 
 #about-page #main .team .team-member:hover .social-links li {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
 }
 
@@ -1487,6 +1519,7 @@ input:focus, textarea:focus {
     border-color: #48ba86;
 }
 
+
 /*
 	9. Blog Page
 */
@@ -1515,7 +1548,7 @@ input:focus, textarea:focus {
     height: 1px;
     background-color: #bfbfbf;
     -webkit-transition: opacity 300ms;
-            transition: opacity 300ms;
+    transition: opacity 300ms;
     opacity: 0;
 }
 
@@ -1531,15 +1564,15 @@ input:focus, textarea:focus {
     border-bottom: 5px solid transparent;
     border-left: 5px solid #bfbfbf;
     -webkit-transition: border-color 300ms;
-            transition: border-color 300ms;
+    transition: border-color 300ms;
 }
 
 #blog-page #main article .content {
     display: inline-block;
     -webkit-transition: -webkit-transform 250ms;
-            transition: -webkit-transform 250ms;
-            transition: transform 250ms;
-            transition: transform 250ms, -webkit-transform 250ms;
+    transition: -webkit-transform 250ms;
+    transition: transform 250ms;
+    transition: transform 250ms, -webkit-transform 250ms;
 }
 
 #blog-page #main article .content h2 {
@@ -1547,25 +1580,25 @@ input:focus, textarea:focus {
     padding-right: 50px;
     line-height: 1.2;
     -webkit-transition: color 250ms;
-            transition: color 250ms;
+    transition: color 250ms;
 }
 
-#blog-page #main article .content > ul {
+#blog-page #main article .content>ul {
     list-style: none;
     margin: 3px 0 0;
     padding: 0;
 }
 
-#blog-page #main article .content > ul > li {
+#blog-page #main article .content>ul>li {
     display: inline-block;
     margin-right: 20px;
 }
 
-#blog-page #main article .content > ul > li:last-child {
+#blog-page #main article .content>ul>li:last-child {
     margin-right: 0;
 }
 
-#blog-page #main article .content > ul > li.author {
+#blog-page #main article .content>ul>li.author {
     display: inline-block;
     font-weight: 400;
     font-size: 11px;
@@ -1573,32 +1606,32 @@ input:focus, textarea:focus {
     text-transform: uppercase;
 }
 
-#blog-page #main article .content > ul > li.author:before {
+#blog-page #main article .content>ul>li.author:before {
     content: 'by';
     margin-right: 3px;
 }
 
-#blog-page #main article .content > ul > li.categories ul {
+#blog-page #main article .content>ul>li.categories ul {
     padding: 0;
 }
 
-#blog-page #main article .content > ul > li.categories ul li {
+#blog-page #main article .content>ul>li.categories ul li {
     display: inline;
     color: #bfbfbf;
     font-size: 13px;
     font-weight: 300;
 }
 
-#blog-page #main article .content > ul > li.categories ul li:after {
+#blog-page #main article .content>ul>li.categories ul li:after {
     content: '—';
     margin-left: 5px;
 }
 
-#blog-page #main article .content > ul > li.categories ul li:last-child {
+#blog-page #main article .content>ul>li.categories ul li:last-child {
     margin-right: 0;
 }
 
-#blog-page #main article .content > ul > li.categories ul li:last-child:after {
+#blog-page #main article .content>ul>li.categories ul li:last-child:after {
     content: '';
     margin-left: 0;
 }
@@ -1613,7 +1646,7 @@ input:focus, textarea:focus {
 
 #blog-page #main article:hover .content {
     -webkit-transform: translateX(5px);
-            transform: translateX(5px);
+    transform: translateX(5px);
 }
 
 #blog-page #main article:hover .content h2 {
@@ -1639,9 +1672,9 @@ input:focus, textarea:focus {
     height: 1px;
     background-color: #bfbfbf;
     -webkit-transition: background-color 300ms, -webkit-transform 300ms;
-            transition: background-color 300ms, -webkit-transform 300ms;
-            transition: transform 300ms, background-color 300ms;
-            transition: transform 300ms, background-color 300ms, -webkit-transform 300ms;
+    transition: background-color 300ms, -webkit-transform 300ms;
+    transition: transform 300ms, background-color 300ms;
+    transition: transform 300ms, background-color 300ms, -webkit-transform 300ms;
 }
 
 #blog-page #main .end-page .pages-navigation .arrow:after {
@@ -1654,7 +1687,7 @@ input:focus, textarea:focus {
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     -webkit-transition: border-color 300ms;
-            transition: border-color 300ms;
+    transition: border-color 300ms;
 }
 
 #blog-page #main .end-page .pages-navigation .arrow.arrow-left:after {
@@ -1681,7 +1714,7 @@ input:focus, textarea:focus {
 
 #blog-page #main .end-page .pages-navigation:hover .arrow.arrow-left {
     -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    transform: translateX(-20px);
 }
 
 #blog-page #main .end-page .pages-navigation:hover .arrow.arrow-left:after {
@@ -1690,7 +1723,7 @@ input:focus, textarea:focus {
 
 #blog-page #main .end-page .pages-navigation:hover .arrow.arrow-right {
     -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    transform: translateX(20px);
 }
 
 #blog-page #main .end-page .pages-navigation:hover .arrow.arrow-right:after {
@@ -1751,7 +1784,7 @@ input:focus, textarea:focus {
     z-index: 2;
     opacity: 0;
     -webkit-transition: top 250ms, opacity 100ms;
-            transition: top 250ms, opacity 100ms;
+    transition: top 250ms, opacity 100ms;
 }
 
 #blog-page.alternative #main article .image img {
@@ -1767,7 +1800,7 @@ input:focus, textarea:focus {
     top: 0;
     left: 0;
     -webkit-transition: opacity 250ms;
-            transition: opacity 250ms;
+    transition: opacity 250ms;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
@@ -1788,7 +1821,7 @@ input:focus, textarea:focus {
 
 #blog-page.alternative #main article .content .title h2 {
     -webkit-transition: color 150ms;
-            transition: color 150ms;
+    transition: color 150ms;
     padding-right: 0;
 }
 
@@ -1796,7 +1829,7 @@ input:focus, textarea:focus {
     color: #48ba86;
 }
 
-#blog-page.alternative #main article .content > ul {
+#blog-page.alternative #main article .content>ul {
     margin: 6px 0 0;
 }
 
@@ -1815,12 +1848,13 @@ input:focus, textarea:focus {
 
 #blog-page.alternative #main article:hover .content {
     -webkit-transform: none;
-            transform: none;
+    transform: none;
 }
 
 #blog-page.alternative #main article:hover .content h2 {
     color: #0e0e0e;
 }
+
 
 /*
 	10. Blog Single
@@ -1839,25 +1873,25 @@ input:focus, textarea:focus {
     padding-right: 50px;
     line-height: 1.2;
     -webkit-transition: color 250ms;
-            transition: color 250ms;
+    transition: color 250ms;
 }
 
-#blog-single #main article .article-top > ul {
+#blog-single #main article .article-top>ul {
     list-style: none;
     margin: 6px 0 30px;
     padding: 0;
 }
 
-#blog-single #main article .article-top > ul > li {
+#blog-single #main article .article-top>ul>li {
     display: inline-block;
     margin-right: 20px;
 }
 
-#blog-single #main article .article-top > ul > li:last-child {
+#blog-single #main article .article-top>ul>li:last-child {
     margin-right: 0;
 }
 
-#blog-single #main article .article-top > ul > li.author {
+#blog-single #main article .article-top>ul>li.author {
     display: inline-block;
     font-weight: 400;
     font-size: 11px;
@@ -1865,37 +1899,37 @@ input:focus, textarea:focus {
     text-transform: uppercase;
 }
 
-#blog-single #main article .article-top > ul > li.author:before {
+#blog-single #main article .article-top>ul>li.author:before {
     content: 'by';
     margin-right: 3px;
 }
 
-#blog-single #main article .article-top > ul > li.time {
+#blog-single #main article .article-top>ul>li.time {
     font-size: 13px;
     color: #bfbfbf;
 }
 
-#blog-single #main article .article-top > ul > li.categories ul {
+#blog-single #main article .article-top>ul>li.categories ul {
     padding: 0;
 }
 
-#blog-single #main article .article-top > ul > li.categories ul li {
+#blog-single #main article .article-top>ul>li.categories ul li {
     display: inline;
     color: #bfbfbf;
     font-size: 13px;
     font-weight: 300;
 }
 
-#blog-single #main article .article-top > ul > li.categories ul li:after {
+#blog-single #main article .article-top>ul>li.categories ul li:after {
     content: '—';
     margin-left: 5px;
 }
 
-#blog-single #main article .article-top > ul > li.categories ul li:last-child {
+#blog-single #main article .article-top>ul>li.categories ul li:last-child {
     margin-right: 0;
 }
 
-#blog-single #main article .article-top > ul > li.categories ul li:last-child:after {
+#blog-single #main article .article-top>ul>li.categories ul li:last-child:after {
     content: '';
     margin-left: 0;
 }
@@ -1919,9 +1953,9 @@ input:focus, textarea:focus {
     height: 1px;
     background-color: #bfbfbf;
     -webkit-transition: background-color 300ms, -webkit-transform 300ms;
-            transition: background-color 300ms, -webkit-transform 300ms;
-            transition: transform 300ms, background-color 300ms;
-            transition: transform 300ms, background-color 300ms, -webkit-transform 300ms;
+    transition: background-color 300ms, -webkit-transform 300ms;
+    transition: transform 300ms, background-color 300ms;
+    transition: transform 300ms, background-color 300ms, -webkit-transform 300ms;
 }
 
 #blog-single #main .end-page .articles-navigation .arrow:after {
@@ -1934,7 +1968,7 @@ input:focus, textarea:focus {
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     -webkit-transition: border-color 300ms;
-            transition: border-color 300ms;
+    transition: border-color 300ms;
 }
 
 #blog-single #main .end-page .articles-navigation .arrow.arrow-left:after {
@@ -1961,7 +1995,7 @@ input:focus, textarea:focus {
 
 #blog-single #main .end-page .articles-navigation:hover .arrow.arrow-left {
     -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    transform: translateX(-20px);
 }
 
 #blog-single #main .end-page .articles-navigation:hover .arrow.arrow-left:after {
@@ -1970,7 +2004,7 @@ input:focus, textarea:focus {
 
 #blog-single #main .end-page .articles-navigation:hover .arrow.arrow-right {
     -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    transform: translateX(20px);
 }
 
 #blog-single #main .end-page .articles-navigation:hover .arrow.arrow-right:after {
@@ -2083,6 +2117,7 @@ input:focus, textarea:focus {
     min-height: 250px;
 }
 
+
 /*
 	11. Contact Page
 */
@@ -2192,6 +2227,7 @@ input:focus, textarea:focus {
     color: #48ba86;
 }
 
+
 /*
 	12. Responsive
 */
@@ -2206,40 +2242,32 @@ input:focus, textarea:focus {
     .global-outer .global-inner {
         padding: 60px 30px;
     }
-
     #sidebar {
         float: none;
         width: 100%;
         text-align: center;
     }
-
     #sidebar .sidebar-inner {
         padding-right: 0;
     }
-
     #sidebar .logo {
         margin-bottom: 15px;
     }
-
     #sidebar .intro {
         border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
         padding-bottom: 20px;
     }
-
     #sidebar nav {
         padding: 15px 0 10px;
     }
-
     #sidebar nav ul li {
         display: inline-block;
         margin: 0 5px;
     }
-
     #sidebar nav ul li.dropdown {
         poisiion: relative;
         margin-right: 17px;
     }
-
     #sidebar nav ul li.dropdown ul {
         position: absolute;
         margin-top: 5px;
@@ -2249,87 +2277,68 @@ input:focus, textarea:focus {
         text-align: left;
         z-index: 10;
     }
-
     #sidebar nav ul li.dropdown ul li {
         display: block;
     }
-
     #sidebar nav ul li.dropdown ul li:first-child {
         padding-top: 10px;
     }
-
     #sidebar nav ul li.dropdown ul li:last-child {
         padding-bottom: 10px;
     }
-
     #sidebar nav ul li.dropdown ul li a {
         display: block;
     }
-
     #sidebar .copyright {
         display: none;
     }
-
     #sidebar .widgets-block .widget {
         margin: 30px 0 50px;
     }
-
     #sidebar .widgets-block .widget .title:after {
         display: none;
     }
-
     #sidebar .widgets-block .widget ul li {
         display: inline-block;
         margin: 0 5px;
     }
-
     #main {
         float: none;
         width: 100%;
     }
-
     #main .main-outer {
         padding-left: 0;
     }
-
     #project-page #main .end-page {
         text-align: center;
     }
-
     #project-page #main .end-page .projects-navigation .arrow,
     #project-page #main .end-page .projects-navigation.previous-project,
     #project-page #main .end-page .projects-navigation.next-project {
         float: none;
     }
-
     #project-page #main .end-page .share-block {
         margin: 20px 0;
     }
-
     #blog-page #main .end-page {
         text-align: center;
     }
-
     #blog-page #main .end-page .pages-navigation .arrow,
     #blog-page #main .end-page .pages-navigation.previous-page,
     #blog-page #main .end-page .pages-navigation.next-page {
         float: none;
     }
-
     #blog-page #main .end-page .pagination {
         margin: 20px 0;
     }
-
     #blog-single #main .end-page {
         text-align: center;
     }
-
     #blog-single #main .end-page .articles-navigation .arrow,
     #blog-single #main .end-page .articles-navigation.previous-article,
     #blog-single #main .end-page .articles-navigation.next-article {
         float: none;
     }
-
     #blog-single #main .end-page .share-block {
         margin: 20px 0;
     }
@@ -2339,11 +2348,9 @@ input:focus, textarea:focus {
     .global-outer .global-inner {
         padding: 60px 10px;
     }
-
     #works-grid .works-item {
         width: 100% !important;
     }
-
     #blog-single #main .comments .comments-list .comment.reply {
         margin-left: 35px;
     }
