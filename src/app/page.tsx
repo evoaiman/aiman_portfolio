@@ -1248,7 +1248,6 @@ export default function Home() {
                 {/* Icon HTML */}
                 <div>
                   <svg
-                    className
                     width={48}
                     height={63}
                     viewBox="0 0 48 63"
@@ -1303,7 +1302,6 @@ export default function Home() {
                 {/* Icon CSS */}
                 <div>
                   <svg
-                    className
                     width={48}
                     height={63}
                     viewBox="0 0 48 63"
@@ -1358,7 +1356,6 @@ export default function Home() {
                 {/* Icon JS */}
                 <div>
                   <svg
-                    className
                     width={48}
                     height={63}
                     viewBox="0 0 48 63"
@@ -1421,7 +1418,6 @@ export default function Home() {
                 {/* Icon Tailwind */}
                 <div>
                   <svg
-                    className
                     width={74}
                     height={48}
                     viewBox="0 0 74 48"
@@ -1599,7 +1595,7 @@ export default function Home() {
                   </svg>
                 </div>
                 {/* Icon Wordpress */}
-                <div className>
+                <div>
                   <svg
                     width={52}
                     height={52}
@@ -1677,7 +1673,6 @@ export default function Home() {
               {/* Arrow Icon */}
               <div className="flex items-center justify-center">
                 <svg
-                  className
                   width={40}
                   height={38}
                   viewBox="0 0 40 38"
