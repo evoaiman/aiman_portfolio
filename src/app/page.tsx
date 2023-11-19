@@ -13,7 +13,7 @@ export default function Home() {
           className="px-5 py-1 text-neutral-500 hover:rounded-lg hover:bg-gray-800 hover:text-white hover:backdrop-blur-2xl group relative"
         >
           Experience
-          <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 px-2 py-1 bg-gray-800 rounded-lg text-center text-neutral-500">
+          <div className="opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 px-2 py-1 bg-gray-800 rounded-lg text-center text-neutral-500">
             Coming Soon
           </div>
         </a>
@@ -234,7 +234,7 @@ export default function Home() {
           className="px-5 py-1 text-neutral-500 hover:rounded-lg hover:bg-gray-800 hover:text-white hover:backdrop-blur-2xl group relative min-w-[120px] text-center"
         >
           Projects
-          <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 px-1 py-1 bg-gray-800 rounded-lg text-center text-neutral-500">
+          <div className="opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 px-1 py-1 bg-gray-800 rounded-lg text-center text-neutral-500">
             Coming Soon
           </div>
         </a>
