@@ -18,10 +18,49 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.logo-btn {
+  box-shadow: 7px 3px 8px 4px #76767633, -1px 2px 14px 0px #FFFFFF;
+}
+
+.work-container {
+  box-shadow: 7px 7px 14px #bebebe,
+    -7px -7px 14px #ffffff;
+}
+
+.inner-work-container {
+  background: linear-gradient(145deg, #273235, #2e3b3f);
+  
+}
+
+.circle-social {
+  box-shadow: 5px 5px 13px 0px #d1d9e6e5 inset, 1px 1px 2px 0px #ffffff4d,
+    -5px -5px 10px 0px #ffffffe5 inset, 5px -5px 10px 0px #d1d9e633 inset,
+    -5px 5px 10px 0px #d1d9e633 inset, -1px -1px 2px 0px #d1d9e680;
+}
+
+.in-touch-btn {
+  box-shadow: 5px 5px 10px 0px #a6abbd, -5px -5px 10px 0px #fafbff;
+}
+
+.work-card {
+  /* background: linear-gradient(145deg, #f3f3f3, #ffffff); */
+box-shadow:  5px 5px 10px #c1c1c1,
+             -5px -5px 10px #ffffff;
+}
+
+.work-card:hover{
+  box-shadow: inset 20px 20px 60px #bebebe,
+  inset -20px -20px 60px #ffffff;
+}
+
+.work-card:hover img{
+  scale: 1.1;
+  transition: all;
+  transition-duration: 300ms;
+  /* transition-timing-function: ease-in-out; */
 }
