@@ -18,7 +18,7 @@ export default function Home() {
           </div>
         </a>
         {/* Logo */}
-        <div className="logo-btn relative flex h-28 w-32 items-end justify-center rounded-b-full bg-neutral-200 pb-6 shadow">
+        <div className="logo-btn relative flex h-28 w-32 items-end justify-center rounded-b-full pb-6 shadow">
           <div className="h-16 w-20">
             <svg
               width={89}
@@ -526,7 +526,7 @@ export default function Home() {
         </a>
       </div>
       {/* Main Content */}
-      <div className="flex h-full w-full flex-col gap-11 px-12 max-w-screen-xl md:mt-0 mt-[66px]">
+      <div className="flex h-full w-full flex-col gap-11 md:px-12 px-[20px] md:max-w-screen-xl md:mt-0 mt-[66px] max-w-[520px]">
         {/* First Row */}
         <div className="flex h-full w-full gap-[39px] md:flex-row flex-col">
           {/* About Container */}
@@ -2069,6 +2069,71 @@ export default function Home() {
               </div>
             </div>
           </div>
+          {/* Get In Touch Button Mobile */}
+          <a
+            href="mailto:aiman_saharudin@yahoo.com"
+            className="bg-[rgba(43, 55, 59, 1)] in-touch-btn flex flex-row items-center justify-center mb-[45px] gap-3 rounded-xl bg-[#2B373B] px-5 py-1 pr-1 text-lg font-bold text-[#E3E3E3] md:hidden"
+          >
+            Let&apos;s Chat
+            {/* Arrow Icon */}
+            <div className="flex items-center justify-center">
+              <svg
+                width={40}
+                height={38}
+                viewBox="0 0 40 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_d_242_680)">
+                  <path
+                    d="M15.8543 28.6508L26.5103 19L15.8543 9.34916L14.4888 10.5858L22.9433 18.2595C23.1522 18.4491 23.2713 18.718 23.2713 19C23.2713 19.282 23.1522 19.5509 22.9433 19.7405L14.4888 27.4142L15.8543 28.6508Z"
+                    stroke="#E3E3E3"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    shapeRendering="crispEdges"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_242_680"
+                    x={9}
+                    y={8}
+                    width={23}
+                    height={30}
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                  >
+                    <feFlood floodOpacity={0} result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy={4} />
+                    <feGaussianBlur stdDeviation={2} />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_242_680"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_242_680"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </a>
         </div>
       </div>
       {/* Copyright */}
