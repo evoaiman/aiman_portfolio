@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-between gap-4">
-      {/* Top Navigation Bar */}
-      <div className="flex w-full items-center justify-evenly max-w-4xl">
+    <div className="flex md:h-screen w-screen flex-col items-center justify-between gap-4 overflow-y-auto md:overflow-y-hidden">
+      {/* Top Navigation Desktop Bar */}
+      <div className="md:flex w-full items-center justify-evenly max-w-4xl hidden">
         <div className=" in-touch-btn selected-menu rounded-lg bg-gray-800 px-5 py-1 text-white backdrop-blur-2xl">
           Hello
         </div>
         <a
-          href=""
+          href="/"
           className="px-5 py-1 text-neutral-500 hover:rounded-lg hover:bg-gray-800 hover:text-white hover:backdrop-blur-2xl group relative"
         >
           Experience
@@ -245,15 +245,295 @@ export default function Home() {
           Contact
         </a>
       </div>
+      {/* Top Navigation Mobile Bar */}
+      <div className="mobile-nav flex gap-[26px] px-[24px] items-center md:hidden  rounded-b-3xl py-3">
+        {/* Home Icon */}
+        <a href="/" className="">
+          <svg
+            width="18"
+            height="20"
+            viewBox="0 0 18 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.75 19.5H12.25C11.5595 19.5 11 18.9405 11 18.25V13.75C11 13.1975 10.5525 12.75 10 12.75H8C7.4475 12.75 7 13.1975 7 13.75V18.25C7 18.9405 6.4405 19.5 5.75 19.5H1.25C0.5595 19.5 0 18.9405 0 18.25V8.7065C0 7.557 0.527 6.471 1.4295 5.76L8.5355 0.1605C8.808 -0.0535 9.192 -0.0535 9.464 0.1605L16.571 5.76C17.4735 6.471 18 7.5565 18 8.7055V18.25C18 18.9405 17.4405 19.5 16.75 19.5Z"
+              fill="#2B373B"
+            />
+          </svg>
+        </a>
+        {/* Ecperience Icon */}
+        <a href="/" className="">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.57761 1.0796C6.84428 1.77219 6.68131 3.2796 7.33317 3.2796C7.53687 3.2796 7.90354 2.91294 8.14798 2.46479C8.51465 1.77219 9.00354 1.64997 10.9998 1.64997C12.9961 1.64997 13.485 1.77219 13.8517 2.46479C14.4221 3.48331 15.0739 3.52405 15.0739 2.50553C15.0739 0.99812 13.9739 0.42775 10.9998 0.42775C9.00354 0.42775 8.02576 0.590713 7.57761 1.0796Z"
+              fill="#6B6E70"
+            />
+            <path
+              d="M1.34444 4.82778C0.366667 5.43889 0 7.55741 0 13.0167C0 19.5352 0.366667 20.9611 2.11852 21.5722C3.78889 22.1426 18.2111 22.1426 19.8815 21.5722C21.6333 20.9611 22 19.5352 22 13.0167C22 7.55741 21.6333 5.43889 20.6556 4.82778C20.0037 4.42037 1.9963 4.42037 1.34444 4.82778ZM4.48148 11.5093C7.7 12.7722 14.3 12.7722 17.5185 11.5093C20.1667 10.45 20.3704 10.45 20.3704 11.1833C20.3704 12.3241 15.2778 13.6685 11 13.6685C6.72222 13.6685 1.62963 12.3241 1.62963 11.1833C1.62963 10.45 1.83333 10.45 4.48148 11.5093Z"
+              fill="#6B6E70"
+            />
+          </svg>
+        </a>
+        {/* Logo Icon */}
+        <a href="" className="relative w-[40px] h-[35px]  translate-x-2">
+          <svg
+            width="57"
+            height="52"
+            viewBox="0 0 57 52"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute -top-1 -left-1"
+          >
+            <g filter="url(#filter0_ii_265_780)">
+              <path
+                d="M31.1201 19.2025H20.2001L9.84008 18.6456L5.92008 23.1013L5.08008 29.5063L9.28008 36.7468L15.1601 38.1392L23.0001 38.6962L31.1201 37.8608L36.1601 36.7468L39.2401 31.7342L39.5201 27L37.8401 21.1519L31.1201 19.2025Z"
+                fill="#E3E3E3"
+              />
+            </g>
+            <g filter="url(#filter1_di_265_780)">
+              <path
+                d="M15.6208 25.6076C14.7888 25.6076 14.0754 25.9784 13.4994 26.7356C12.9234 27.4927 12.6401 28.4093 12.6401 29.5006C12.6401 30.592 12.9328 31.5265 13.4994 32.2755C14.0661 33.0245 14.7794 33.4051 15.6208 33.4051C16.3974 33.4051 17.0715 33.0261 17.6415 32.2771C18.2116 31.5281 18.5008 30.6034 18.5008 29.5023C18.5008 28.4011 18.2081 27.4846 17.6415 26.7372C17.0749 25.9898 16.4008 25.6076 15.6208 25.6076ZM29.9108 25.6076C29.0881 25.6076 28.3654 25.9784 27.7894 26.7356C27.2134 27.4927 26.9301 28.4093 26.9301 29.5006C26.9301 30.592 27.2227 31.5265 27.7894 32.2755C28.356 33.0245 29.0788 33.4051 29.9108 33.4051C30.6881 33.4051 31.3614 33.0261 31.9408 32.2771C32.5202 31.5281 32.8001 30.6034 32.8001 29.5023C32.8001 28.4011 32.5074 27.4846 31.9408 26.7372C31.3742 25.9898 30.6975 25.6076 29.9108 25.6076Z"
+                fill="black"
+              />
+            </g>
+            <g filter="url(#filter2_di_265_780)">
+              <path
+                d="M39.7595 14.8687C39.7501 14.8687 40.0056 13.5621 39.7867 11.2864C39.5858 9.00904 39.1054 6.91891 38.3176 5C38.3176 5 37.9156 5.07338 37.1491 5.26485C36.3826 5.45632 35.1298 5.84348 33.4171 6.61779C31.7291 7.39378 29.95 8.4262 28.0976 9.67876C26.838 9.32197 24.9584 9.13978 22.44 9.13978C20.04 9.13978 18.1604 9.32197 16.7824 9.67876C12.7131 6.8548 9.30333 5.29522 6.55301 5C5.76891 6.91919 5.28232 9.02085 5.09325 11.305C4.87437 13.5824 5.12987 14.8965 5.12987 14.8965C2.91213 17.2996 2 20.7629 2 23.6223C2 25.8339 2.06388 27.8346 2.55699 29.6109C3.06799 31.3747 3.71526 32.8162 4.48176 33.9245C5.27479 35.0452 6.24913 36.0287 7.3655 36.8353C8.50588 37.6855 9.55513 38.2979 10.5047 38.6817C11.4629 39.0832 12.5487 39.3759 13.7896 39.5859C14.7093 39.7621 15.6386 39.8843 16.5729 39.952C16.5729 39.952 19.1279 40.0886 22.4494 40.0886C25.7709 40.0886 28.3165 39.952 28.3165 39.952C29.2507 39.8821 30.18 39.7587 31.0997 39.5825C32.2222 39.4031 33.3209 39.0998 34.3753 38.6783C35.3249 38.2853 36.3741 37.6822 37.5264 36.8319C38.6423 36.0265 39.6139 35.0415 40.4008 33.9177C41.1673 32.8119 41.8146 31.3679 42.3256 29.6042C42.8366 27.8405 42.88 25.8246 42.88 23.613C42.88 20.8447 41.9679 17.3358 39.7595 14.8687ZM33.7919 36.2145C31.2454 37.4114 27.504 37.8956 22.5405 37.8956H22.3489C17.3845 37.8956 13.6431 37.4207 11.1435 36.2145C8.64385 35.0083 7.37487 32.5496 7.37487 28.84C7.37487 26.62 8.15925 24.82 9.70162 23.4418C10.377 22.8513 11.198 22.4363 12.22 22.19C13.242 21.9437 14.1729 21.937 15.0484 21.9615C15.9069 21.9977 17.1111 22.1622 18.6348 22.2811C20.1584 22.4001 21.3081 22.5553 22.4494 22.5553C23.5165 22.5553 24.9311 22.3722 27.2034 22.19C29.4756 22.0079 31.173 21.9159 32.2674 22.0981C33.3899 22.2811 34.3667 22.6649 35.1971 23.4418C36.8119 24.8852 37.621 26.6846 37.6244 28.84C37.615 32.5496 36.3281 35.0176 33.7919 36.2145Z"
+                fill="black"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_ii_265_780"
+                x="4.08008"
+                y="17.6456"
+                width="36.4399"
+                height="22.0507"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="-1" dy="-1" />
+                <feGaussianBlur stdDeviation="0.5" />
+                <feComposite
+                  in2="hardAlpha"
+                  operator="arithmetic"
+                  k2="-1"
+                  k3="1"
+                />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.7 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="shape"
+                  result="effect1_innerShadow_265_780"
+                />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="1" dy="1" />
+                <feGaussianBlur stdDeviation="3.5" />
+                <feComposite
+                  in2="hardAlpha"
+                  operator="arithmetic"
+                  k2="-1"
+                  k3="1"
+                />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.682353 0 0 0 0 0.682353 0 0 0 0 0.752941 0 0 0 0.15 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="effect1_innerShadow_265_780"
+                  result="effect2_innerShadow_265_780"
+                />
+              </filter>
+              <filter
+                id="filter1_di_265_780"
+                x="11.6401"
+                y="23.6076"
+                width="28.1602"
+                height="15.7975"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="3" dy="2" />
+                <feGaussianBlur stdDeviation="2" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_265_780"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_265_780"
+                  result="shape"
+                />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="2" dy="3" />
+                <feGaussianBlur stdDeviation="2" />
+                <feComposite
+                  in2="hardAlpha"
+                  operator="arithmetic"
+                  k2="-1"
+                  k3="1"
+                />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="shape"
+                  result="effect2_innerShadow_265_780"
+                />
+              </filter>
+              <filter
+                id="filter2_di_265_780"
+                x="0"
+                y="0"
+                width="56.8799"
+                height="51.0886"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="6" dy="3" />
+                <feGaussianBlur stdDeviation="4" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_265_780"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_265_780"
+                  result="shape"
+                />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="8" dy="10" />
+                <feGaussianBlur stdDeviation="5" />
+                <feComposite
+                  in2="hardAlpha"
+                  operator="arithmetic"
+                  k2="-1"
+                  k3="1"
+                />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.837028 0 0 0 0 0.837028 0 0 0 0 0.837028 0 0 0 0.2 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="shape"
+                  result="effect2_innerShadow_265_780"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </a>
+        {/* Projects Icon */}
+        <a href="" className="">
+          <svg
+            width="21"
+            height="23"
+            viewBox="0 0 21 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21 7.71974C21.0009 7.35844 20.9598 7.00374 20.8463 6.66103C20.5154 5.6614 19.9592 4.83236 19.0273 4.29357C16.8618 3.04177 14.6946 1.79387 12.5343 0.534581C11.9469 0.191874 11.3212 0.0194707 10.6487 0.00178066C9.90736 -0.0174085 9.20314 0.116616 8.55105 0.495303C6.37034 1.76149 4.17615 3.00609 2.00534 4.28937C0.711058 5.05484 0.0299056 6.23138 0.0137234 7.73443C-0.0126477 10.2476 0.00743018 12.7608 0.00563215 15.274C0.00533248 15.6611 0.0529803 16.0395 0.18124 16.4044C0.522864 17.3758 1.07456 18.1815 1.98766 18.7077C4.1363 19.946 6.28554 21.1837 8.42669 22.434C8.98917 22.7626 9.58192 22.9569 10.2283 22.9919C11.0179 23.0354 11.7689 22.9071 12.4642 22.5029C14.6305 21.2451 16.7971 19.9882 18.9706 18.7427C19.5768 18.3949 20.0449 17.9218 20.4006 17.3296C20.7441 16.7588 20.9859 16.1483 20.9919 15.474C21.003 14.1499 20.9952 12.8259 20.9952 11.5018H20.9988C20.9988 10.241 20.9973 8.98023 21 7.71974ZM8.11773 14.4144C8.28794 14.5952 8.27985 14.8797 8.09915 15.05C8.01224 15.1319 7.90136 15.1726 7.79079 15.1726C7.67152 15.1726 7.55225 15.1253 7.46384 15.0314L4.42338 11.8076C4.25976 11.6343 4.25976 11.3636 4.42338 11.19L7.46384 7.968C7.63436 7.7872 7.91904 7.77941 8.09945 7.94971C8.27985 8.12031 8.28794 8.40515 8.11773 8.58565L5.36825 11.4988L8.11773 14.4144ZM11.7072 8.42524L10.166 14.7868C10.1159 14.9927 9.93224 15.1304 9.72936 15.1304C9.6943 15.1304 9.65894 15.1262 9.62327 15.1178C9.38204 15.0593 9.2337 14.8161 9.29244 14.5745L10.8336 8.21296C10.8924 7.9716 11.1351 7.82438 11.3766 7.88195C11.6176 7.94071 11.7659 8.18358 11.7072 8.42524ZM16.5768 11.8097L13.5364 15.0317C13.448 15.1256 13.329 15.1726 13.2094 15.1726C13.0986 15.1726 12.9877 15.1319 12.9008 15.05C12.7204 14.8794 12.7123 14.5946 12.8825 14.4141L15.632 11.5009L12.8825 8.58565C12.7123 8.40485 12.7204 8.12031 12.9011 7.95001C13.0818 7.77971 13.3662 7.7881 13.5364 7.9686L16.5768 11.1924C16.7405 11.3657 16.7405 11.6364 16.5768 11.8097Z"
+              fill="#6B6E70"
+            />
+          </svg>
+        </a>
+        {/* Email Icon */}
+        <a href="" className="">
+          <svg
+            width="22"
+            height="21"
+            viewBox="0 0 22 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.03233 0.815838C0.439274 3.43913 -1.59007 9.97261 1.3302 15.7637C3.11206 19.2779 8.40814 21.6042 12.9123 20.8618C14.4467 20.6143 14.6941 20.3668 14.5952 19.5254C14.4467 18.6344 14.0507 18.4364 10.9324 18.189C6.92326 17.892 4.89392 16.7536 3.60702 14.0808C1.82516 10.3191 3.35954 5.122 6.82427 3.38964C10.487 1.50878 15.3376 2.44921 17.169 5.46847C18.6043 7.74529 18.4064 12.5464 16.9215 12.5464C16.0305 12.5464 15.8821 12.1504 15.6841 9.08169C15.4861 6.16142 15.2881 5.61696 14.4962 5.46847C13.9517 5.31998 13.2093 5.66646 12.8628 6.16142C12.2688 6.95335 12.1698 6.95335 11.3284 6.21091C9.99202 5.02301 7.91318 5.17149 6.52729 6.60688C5.53737 7.54731 5.28989 8.28975 5.28989 10.3191C5.28989 12.4969 5.53737 13.0909 6.72528 14.3283C8.40814 15.9616 10.3385 16.2091 11.6254 14.8727C12.4173 14.0313 12.5163 14.0313 13.8032 14.9222C15.4861 16.1596 18.0104 15.7637 19.6438 14.0313C21.2771 12.2494 21.5741 8.24025 20.2377 5.22099C18.7528 1.85526 16.0305 0.221886 11.5264 0.023901C8.90311 -0.0750904 7.51721 0.122894 6.03233 0.815838ZM11.8729 9.42816C12.2688 10.0221 12.2688 10.6161 11.8234 11.507C11.0809 13.0909 9.89303 13.1404 9.20008 11.606C8.11117 9.23017 10.5365 7.25033 11.8729 9.42816Z"
+              fill="#6B6E70"
+            />
+          </svg>
+        </a>
+      </div>
       {/* Main Content */}
-      <div className="flex h-full w-full flex-col gap-11  px-12 max-w-screen-xl">
+      <div className="flex h-full w-full flex-col gap-11 px-12 max-w-screen-xl md:mt-0 mt-[66px]">
         {/* First Row */}
-        <div className="flex h-full w-full gap-[39px] border">
+        <div className="flex h-full w-full gap-[39px] md:flex-row flex-col">
           {/* About Container */}
-          <div className="work-container relative flex h-full w-1/2 flex-col items-center justify-center rounded-3xl px-4 py-5">
+          <div className="work-container relative flex h-full w-full md:w-1/2 flex-col items-center justify-center rounded-3xl px-4 py-5">
             {/* Image */}
             <div
-              className="absolute -left-8 -top-8 h-[130px] w-[130px] rounded-full border-8 border-[#2B373B] overflow-hidden bg-cover bg-center profile-image"
+              className="absolute md:-left-8 md:-top-8 -top-12 h-[100px] w-[100px] md:h-[130px] md:w-[130px] rounded-full border-8 border-[#2B373B] overflow-hidden bg-cover bg-center profile-image"
               style={{
                 backgroundImage: 'url("../../public/am-edited.jpg")',
               }}
@@ -267,7 +547,7 @@ export default function Home() {
               />
             </div>
             {/* Title */}
-            <div className="mt-2 w-72 text-center">
+            <div className="md:mt-2 mt-[58px] w-72 text-center">
               <span className="font-['Inter'] text-3xl font-bold text-neutral-500">
                 HELLO. I AM
               </span>
@@ -281,7 +561,7 @@ export default function Home() {
               Full Stack &amp; App Developer
             </div>
             {/* About Me Description */}
-            <div className="mt-5 w-96 text-center font-['Inter'] text-base font-normal leading-relaxed tracking-wider text-neutral-500">
+            <div className="mt-5 md:w-96 w-full text-center font-['Inter'] md:text-base text-sm font-normal leading-relaxed tracking-wider text-neutral-500">
               Experienced full-stack and app developer with a passion for
               crafting efficient digital solutions that enhance user
               experiences.
@@ -291,11 +571,11 @@ export default function Home() {
               {/* LinkedIn */}
               <a
                 href="https://www.linkedin.com/in/aiman-saharudin/"
-                className="circle-social flex h-14 w-14 items-center justify-center rounded-full bg-neutral-200"
+                className="circle-social flex md:h-14 md:w-14 w-11 h-11 items-center justify-center rounded-full bg-neutral-200"
               >
                 {/* LinkedIn Icon */}
                 <svg
-                  className="hover:scale-110 transition-all"
+                  className="hover:scale-110 transition-all md:w-[28px] md:h-[28px] w-[20px] h-[20px]"
                   width={28}
                   height={28}
                   viewBox="0 0 28 28"
@@ -361,11 +641,11 @@ export default function Home() {
               {/* Github */}
               <a
                 href="https://github.com/evoaiman"
-                className="circle-social flex h-14 w-14 items-center justify-center rounded-full bg-neutral-200"
+                className="circle-social flex md:h-14 md:w-14 w-11 h-11 items-center justify-center rounded-full bg-neutral-200"
               >
                 {/* Github Icon */}
                 <svg
-                  className="hover:scale-110 transition-all"
+                  className="hover:scale-110 transition-all md:w-[28px] md:h-[28px] w-[20px] h-[20px]"
                   width={28}
                   height={28}
                   viewBox="0 0 28 28"
@@ -433,11 +713,11 @@ export default function Home() {
               {/* Dribble */}
               <a
                 href="https://dribbble.com/iamaiman"
-                className="circle-social flex h-14 w-14 items-center justify-center rounded-full bg-neutral-200"
+                className="circle-social flex md:h-14 md:w-14 w-11 h-11 items-center justify-center rounded-full bg-neutral-200"
               >
                 {/* Dribble Icon */}
                 <svg
-                  className="hover:scale-110 transition-all"
+                  className="hover:scale-110 transition-all md:w-[28px] md:h-[28px] w-[20px] h-[20px]"
                   width={28}
                   height={28}
                   viewBox="0 0 28 28"
@@ -559,8 +839,8 @@ export default function Home() {
             </div>
           </div>
           {/* Tools Container */}
-          <div className="work-container h-full w-1/2 rounded-3xl bg-[#2B373B]">
-            <div className="transitioninner-work-container flex h-full w-full flex-col items-center justify-between rounded-3xl bg-[#2B373B] px-8 py-5">
+          <div className="work-container md:h-full md:min-h-0 min-h-[432px] md:w-1/2 w-full rounded-3xl bg-[#2B373B]">
+            <div className="transitioninner-work-container flex h-full w-full flex-col items-center justify-between md:justify-evenly rounded-3xl bg-[#2B373B] px-8 py-5">
               {/* Title */}
               <div className="w-72 text-center">
                 <span className="font-['Inter'] text-3xl font-bold text-neutral-400">
@@ -572,7 +852,7 @@ export default function Home() {
                 </span>
               </div>
               {/* Grid Container */}
-              <div className="mb-4 mt-4 grid grid-cols-5 place-items-center gap-x-4 gap-y-3">
+              <div className="mb-4 md:mt-4 mt-[20px] grid md:grid-cols-5 grid-cols-3 place-items-center gap-x-4 md:gap-y-3 gap-y-[28px]">
                 {/* Icon Flutter */}
                 <div>
                   <svg
@@ -1595,7 +1875,7 @@ export default function Home() {
                   </svg>
                 </div>
                 {/* Icon Wordpress */}
-                <div>
+                <div className="col-start-2 md:col-start-auto">
                   <svg
                     width={52}
                     height={52}
@@ -1656,7 +1936,7 @@ export default function Home() {
         <div className="work-container flex h-full w-full flex-col gap-7 rounded-3xl px-[50px] py-5">
           {/* Title First Row */}
           <div className="flex items-center justify-between">
-            <div className="w-80">
+            <div className="w-80 md:block flex justify-center gap-2">
               <span className="font-['Inter'] text-3xl font-bold text-neutral-500">
                 THE{" "}
               </span>
@@ -1667,7 +1947,7 @@ export default function Home() {
             {/* Get in Touch Button */}
             <a
               href="mailto:aiman_saharudin@yahoo.com"
-              className="bg-[rgba(43, 55, 59, 1)] in-touch-btn flex flex-row items-center gap-3 rounded-xl bg-[#2B373B] px-5 py-1 pr-1 text-lg font-bold text-[#E3E3E3]"
+              className="bg-[rgba(43, 55, 59, 1)] in-touch-btn md:flex flex-row items-center gap-3 rounded-xl bg-[#2B373B] px-5 py-1 pr-1 text-lg font-bold text-[#E3E3E3] hidden"
             >
               GET IN TOUCH
               {/* Arrow Icon */}
@@ -1731,8 +2011,8 @@ export default function Home() {
             </a>
           </div>
           {/* Work Card Container */}
-          <div className="flex h-full flex-row gap-10 pb-7">
-            <div className="work-card relative w-1/4 rounded-xl flex items-center">
+          <div className="flex h-full gap-10 pb-7 md:flex-row flex-col">
+            <div className="work-card relative w-full h-[207px] md:w-1/4 md:h-auto rounded-xl flex items-center">
               {/* Image */}
               <Image
                 src="/BRACE Mockup.png" // Reference the image in the public directory
@@ -1746,7 +2026,7 @@ export default function Home() {
                 BRACE
               </div>
             </div>
-            <div className="work-card relative w-1/4 rounded-xl flex items-center">
+            <div className="work-card relative w-full h-[207px] md:w-1/4 md:h-auto rounded-xl flex items-center">
               {/* Image */}
               <Image
                 src="/TNG Mockup.png" // Reference the image in the public directory
@@ -1760,7 +2040,7 @@ export default function Home() {
                 TNG Bateriku MiniApp
               </div>
             </div>
-            <div className="work-card relative w-1/4 rounded-xl flex items-center">
+            <div className="work-card relative w-full h-[207px] md:w-1/4 md:h-auto rounded-xl flex items-center">
               {/* Image */}
               <Image
                 src="/Ticketing Mockup.png" // Reference the image in the public directory
@@ -1774,7 +2054,7 @@ export default function Home() {
                 Ticketing Motormaniac
               </div>
             </div>
-            <div className="work-card relative w-1/4 rounded-xl flex items-center">
+            <div className="work-card relative w-full h-[207px] md:w-1/4 md:h-auto rounded-xl flex items-center">
               {/* Image */}
               <Image
                 src="/Website Mockup.png" // Reference the image in the public directory
