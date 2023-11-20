@@ -526,7 +526,7 @@ export default function Home() {
         </a>
       </div>
       {/* Main Content */}
-      <div className="flex h-full w-full flex-col gap-11 md:px-12 px-[20px] md:max-w-screen-xl md:mt-0 mt-[66px] max-w-[520px]">
+      <div className="flex h-full w-full flex-col gap-11 md:px-12 px-[20px] md:max-w-screen-xl md:mt-7 mt-[66px] max-w-[520px]">
         {/* First Row */}
         <div className="flex h-full w-full gap-[39px] md:flex-row flex-col">
           {/* About Container */}
