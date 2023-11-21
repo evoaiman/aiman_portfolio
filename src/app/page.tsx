@@ -1949,7 +1949,7 @@ export default function Home() {
               href="mailto:aiman_saharudin@yahoo.com"
               className="bg-[rgba(43, 55, 59, 1)] in-touch-btn md:flex flex-row items-center gap-3 rounded-xl bg-[#2B373B] px-5 py-1 pr-1 text-lg font-bold text-[#E3E3E3] hidden"
             >
-              Let&apos;s Chat
+              Contact Me
               {/* Arrow Icon */}
               <div className="flex items-center justify-center">
                 <svg
@@ -2074,7 +2074,7 @@ export default function Home() {
             href="mailto:aiman_saharudin@yahoo.com"
             className="bg-[rgba(43, 55, 59, 1)] in-touch-btn flex flex-row items-center justify-center mb-[45px] gap-3 rounded-xl bg-[#2B373B] px-5 py-1 pr-1 text-lg font-bold text-[#E3E3E3] md:hidden"
           >
-            Let&apos;s Chat
+            Contact Me
             {/* Arrow Icon */}
             <div className="flex items-center justify-center">
               <svg
