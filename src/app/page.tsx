@@ -1949,7 +1949,7 @@ export default function Home() {
               href="mailto:aiman_saharudin@yahoo.com"
               className="bg-[rgba(43, 55, 59, 1)] in-touch-btn md:flex flex-row items-center gap-3 rounded-xl bg-[#2B373B] px-5 py-1 pr-1 text-lg font-bold text-[#E3E3E3] hidden"
             >
-              CONTACT ME
+              Contact Me
               {/* Arrow Icon */}
               <div className="flex items-center justify-center">
                 <svg
@@ -2022,7 +2022,7 @@ export default function Home() {
                 className="px-5 py-7"
               />
               {/* Card Label */}
-              <div className="work-card-label absolute bottom-0 right-0 rounded-br-xl rounded-tl-3xl bg-[#2B373B] px-4 py-1 font-['Inter'] text-xs font-extrabold tracking-wide text-white">
+              <div className="work-card-label absolute bottom-0 right-0 rounded-br-xl rounded-tl-3xl bg-[#2B373B] px-4 py-1 font-['Inter'] text-xs font-semibold tracking-wide text-white">
                 BRACE
               </div>
             </div>
@@ -2036,7 +2036,7 @@ export default function Home() {
                 className="px-5 py-7"
               />
               {/* Card Label */}
-              <div className="work -card-label absolute bottom-0 right-0 rounded-br-xl rounded-tl-3xl bg-[#2B373B] px-4 py-1 font-['Inter'] text-xs font-extrabold tracking-wide text-white">
+              <div className="work -card-label absolute bottom-0 right-0 rounded-br-xl rounded-tl-3xl bg-[#2B373B] px-4 py-1 font-['Inter'] text-xs font-semibold tracking-wide text-white">
                 TNG Bateriku MiniApp
               </div>
             </div>
@@ -2050,7 +2050,7 @@ export default function Home() {
                 className="px-5 py-7"
               />
               {/* Card Label */}
-              <div className="work -card-label absolute bottom-0 right-0 rounded-br-xl rounded-tl-3xl bg-[#2B373B] px-4 py-1 font-['Inter'] text-xs font-extrabold tracking-wide text-white">
+              <div className="work -card-label absolute bottom-0 right-0 rounded-br-xl rounded-tl-3xl bg-[#2B373B] px-4 py-1 font-['Inter'] text-xs font-semibold tracking-wide text-white">
                 Ticketing Motormaniac
               </div>
             </div>
@@ -2064,7 +2064,7 @@ export default function Home() {
                 className="px-5 py-7"
               />
               {/* Card Label */}
-              <div className="work -card-label absolute bottom-0 right-0 rounded-br-xl rounded-tl-3xl bg-[#2B373B] px-4 py-1 font-['Inter'] text-xs font-extrabold tracking-wide text-white">
+              <div className="work -card-label absolute bottom-0 right-0 rounded-br-xl rounded-tl-3xl bg-[#2B373B] px-4 py-1 font-['Inter'] text-xs font-semibold tracking-wide text-white">
                 Corporate Website
               </div>
             </div>
@@ -2074,7 +2074,7 @@ export default function Home() {
             href="mailto:aiman_saharudin@yahoo.com"
             className="bg-[rgba(43, 55, 59, 1)] in-touch-btn flex flex-row items-center justify-center mb-[45px] gap-3 rounded-xl bg-[#2B373B] px-5 py-1 pr-1 text-lg font-bold text-[#E3E3E3] md:hidden"
           >
-            CONTACT ME
+            Contact Me
             {/* Arrow Icon */}
             <div className="flex items-center justify-center">
               <svg
