@@ -2012,7 +2012,7 @@ export default function Home() {
           </div>
           {/* Work Card Container */}
           <div className="flex h-full gap-10 pb-7 md:flex-row flex-col">
-            <div className="work-card relative w-full h-[207px] md:w-1/4 md:h-auto rounded-xl flex items-center">
+            <a href="https://bateriku.com/brace/" className="work-card relative w-full h-[207px] md:w-1/4 md:h-auto rounded-xl flex items-center">
               {/* Image */}
               <Image
                 src="/BRACE Mockup.png" // Reference the image in the public directory
@@ -2025,8 +2025,8 @@ export default function Home() {
               <div className="work-card-label absolute bottom-0 right-0 rounded-br-xl rounded-tl-3xl bg-[#2B373B] px-4 py-1 font-['Inter'] text-xs font-semibold tracking-wide text-white">
                 BRACE
               </div>
-            </div>
-            <div className="work-card relative w-full h-[207px] md:w-1/4 md:h-auto rounded-xl flex items-center">
+            </a>
+            <a href="https://apps.apple.com/my/app/touch-n-go-ewallet/id1344696702" className="work-card relative w-full h-[207px] md:w-1/4 md:h-auto rounded-xl flex items-center">
               {/* Image */}
               <Image
                 src="/TNG Mockup.png" // Reference the image in the public directory
@@ -2039,8 +2039,8 @@ export default function Home() {
               <div className="work -card-label absolute bottom-0 right-0 rounded-br-xl rounded-tl-3xl bg-[#2B373B] px-4 py-1 font-['Inter'] text-xs font-semibold tracking-wide text-white">
                 TNG Bateriku MiniApp
               </div>
-            </div>
-            <div className="work-card relative w-full h-[207px] md:w-1/4 md:h-auto rounded-xl flex items-center">
+            </a>
+            <a href="https://bateriku.com/ticketing/" className="work-card relative w-full h-[207px] md:w-1/4 md:h-auto rounded-xl flex items-center">
               {/* Image */}
               <Image
                 src="/Ticketing Mockup.png" // Reference the image in the public directory
@@ -2053,8 +2053,8 @@ export default function Home() {
               <div className="work -card-label absolute bottom-0 right-0 rounded-br-xl rounded-tl-3xl bg-[#2B373B] px-4 py-1 font-['Inter'] text-xs font-semibold tracking-wide text-white">
                 Ticketing Motormaniac
               </div>
-            </div>
-            <div className="work-card relative w-full h-[207px] md:w-1/4 md:h-auto rounded-xl flex items-center">
+            </a>
+            <a href="https://bateriku.com/" className="work-card relative w-full h-[207px] md:w-1/4 md:h-auto rounded-xl flex items-center">
               {/* Image */}
               <Image
                 src="/Website Mockup.png" // Reference the image in the public directory
@@ -2067,7 +2067,7 @@ export default function Home() {
               <div className="work -card-label absolute bottom-0 right-0 rounded-br-xl rounded-tl-3xl bg-[#2B373B] px-4 py-1 font-['Inter'] text-xs font-semibold tracking-wide text-white">
                 Corporate Website
               </div>
-            </div>
+            </a>
           </div>
           {/* Get In Touch Button Mobile */}
           <a
